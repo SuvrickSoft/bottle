@@ -20,6 +20,6 @@
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src", "public/materialize.js", "src/components/Header.tsx"
   ]
 }
