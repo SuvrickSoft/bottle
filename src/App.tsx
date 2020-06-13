@@ -1,15 +1,21 @@
 import React from 'react';
-import './App.css';
 import { Header } from './components/Header';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { About } from './pages/About';
 
 
 
 
 function App() {
   return (
-    <div className="">
-      <Header/>
-    </div>
+    <BrowserRouter>
+    <Header/>
+      <Switch>
+        <Route component={About} path="/about" />
+        <Route component={Home} path="/" />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
